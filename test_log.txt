@@ -1,2 +1,12 @@
 ---CPU Tests---
 ---File IO Tests---
+128 files, 16Mb each
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+Using synchronous I/O mode
+Number of threads: 16
+128 files, 16Mb each
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+128 files, 16Mb each
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+128 files, 16Mb each
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
