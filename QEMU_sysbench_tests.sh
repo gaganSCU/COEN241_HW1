@@ -22,8 +22,9 @@ runFileIO(){
 	done
 }
 
-echo "CPU Core Count" >> $outputFile
-sudo lshw -c cpu | grep configuration >> $outputFile
+echo "CPU Config" >> $outputFile
+sudo lscpu | tee >(grep 'CPU(s):' >> $outputFile) >(grep 'Socket' >> $outputFile) >(grep 'Thread' >> $outputFile)
+sleep 3
 echo "RAM Amount" >> $outputFile
 sudo lshw -c memory | grep capacity >> $outputFile
 echo "---CPU Tests---" >> $outputFile
