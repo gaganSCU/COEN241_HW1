@@ -1,26 +1,29 @@
-CPU Core Count
-       configuration: cores=1 enabledcores=1 threads=1
+CPU Config
+Thread(s) per core:    1
+Socket(s):             1
+CPU(s):                1
+NUMA node0 CPU(s):     0
 RAM Amount
        capacity: 2GiB
 ---CPU Tests---
 -----5000
-    execution time (avg/stddev):   5.0736/0.00
-    execution time (avg/stddev):   5.0703/0.00
-    execution time (avg/stddev):   5.0810/0.00
-    execution time (avg/stddev):   5.0694/0.00
-    execution time (avg/stddev):   5.0827/0.00
+    execution time (avg/stddev):   5.1210/0.00
+    execution time (avg/stddev):   5.1339/0.00
+    execution time (avg/stddev):   5.1939/0.00
+    execution time (avg/stddev):   5.1406/0.00
+    execution time (avg/stddev):   5.1565/0.00
 -----10000
-    execution time (avg/stddev):   12.4340/0.00
-    execution time (avg/stddev):   12.4299/0.00
-    execution time (avg/stddev):   12.4455/0.00
-    execution time (avg/stddev):   12.4295/0.00
-    execution time (avg/stddev):   12.4473/0.00
+    execution time (avg/stddev):   12.5998/0.00
+    execution time (avg/stddev):   12.6058/0.00
+    execution time (avg/stddev):   12.5690/0.00
+    execution time (avg/stddev):   12.5482/0.00
+    execution time (avg/stddev):   12.5829/0.00
 -----20000
-    execution time (avg/stddev):   30.8552/0.00
-    execution time (avg/stddev):   30.8614/0.00
-    execution time (avg/stddev):   30.8817/0.00
-    execution time (avg/stddev):   30.8354/0.00
-    execution time (avg/stddev):   30.9000/0.00
+    execution time (avg/stddev):   31.6840/0.00
+    execution time (avg/stddev):   31.3436/0.00
+    execution time (avg/stddev):   31.3811/0.00
+    execution time (avg/stddev):   31.2209/0.00
+    execution time (avg/stddev):   31.0576/0.00
 ---------------------------------------------
 ---File IO Tests---
 -----2G 128Files 16Threads
@@ -42,23 +45,23 @@ Doing random r/w test
 Threads started!
 Done.
 
-Operations performed:  6082 Read, 4047 Write, 12800 Other = 22929 Total
-Read 95.031Mb  Written 63.234Mb  Total transferred 158.27Mb  (43.125Mb/sec)
- 2759.99 Requests/sec executed
+Operations performed:  6047 Read, 4026 Write, 12800 Other = 22873 Total
+Read 94.484Mb  Written 62.906Mb  Total transferred 157.39Mb  (46.088Mb/sec)
+ 2949.64 Requests/sec executed
 
 Test execution summary:
-    total time:                          3.6699s
-    total number of events:              10129
-    total time taken by event execution: 7.8637
+    total time:                          3.4150s
+    total number of events:              10073
+    total time taken by event execution: 6.7332
     per-request statistics:
          min:                                  0.01ms
-         avg:                                  0.78ms
-         max:                                 18.95ms
-         approx.  95 percentile:               4.95ms
+         avg:                                  0.67ms
+         max:                                 17.66ms
+         approx.  95 percentile:               4.52ms
 
 Threads fairness:
-    events (avg/stddev):           633.0625/54.48
-    execution time (avg/stddev):   0.4915/0.03
+    events (avg/stddev):           629.5625/61.83
+    execution time (avg/stddev):   0.4208/0.03
 
 sysbench 0.4.12:  multi-threaded system evaluation benchmark
 
@@ -78,23 +81,23 @@ Doing random r/w test
 Threads started!
 Done.
 
-Operations performed:  6037 Read, 4021 Write, 12800 Other = 22858 Total
-Read 94.328Mb  Written 62.828Mb  Total transferred 157.16Mb  (41.915Mb/sec)
- 2682.58 Requests/sec executed
+Operations performed:  6015 Read, 4004 Write, 12800 Other = 22819 Total
+Read 93.984Mb  Written 62.562Mb  Total transferred 156.55Mb  (39.471Mb/sec)
+ 2526.17 Requests/sec executed
 
 Test execution summary:
-    total time:                          3.7494s
-    total number of events:              10058
-    total time taken by event execution: 7.8126
+    total time:                          3.9661s
+    total number of events:              10019
+    total time taken by event execution: 8.8622
     per-request statistics:
          min:                                  0.01ms
-         avg:                                  0.78ms
-         max:                                 19.44ms
-         approx.  95 percentile:               4.91ms
+         avg:                                  0.88ms
+         max:                                 30.62ms
+         approx.  95 percentile:               5.49ms
 
 Threads fairness:
-    events (avg/stddev):           628.6250/53.79
-    execution time (avg/stddev):   0.4883/0.04
+    events (avg/stddev):           626.1875/53.32
+    execution time (avg/stddev):   0.5539/0.02
 
 sysbench 0.4.12:  multi-threaded system evaluation benchmark
 
@@ -114,23 +117,23 @@ Doing random r/w test
 Threads started!
 Done.
 
-Operations performed:  6025 Read, 4009 Write, 12800 Other = 22834 Total
-Read 94.141Mb  Written 62.641Mb  Total transferred 156.78Mb  (32.741Mb/sec)
- 2095.41 Requests/sec executed
+Operations performed:  5998 Read, 4002 Write, 12800 Other = 22800 Total
+Read 93.719Mb  Written 62.531Mb  Total transferred 156.25Mb  (26.641Mb/sec)
+ 1705.04 Requests/sec executed
 
 Test execution summary:
-    total time:                          4.7886s
-    total number of events:              10034
-    total time taken by event execution: 9.8051
+    total time:                          5.8650s
+    total number of events:              10000
+    total time taken by event execution: 9.9212
     per-request statistics:
          min:                                  0.01ms
-         avg:                                  0.98ms
-         max:                                 35.25ms
-         approx.  95 percentile:               6.36ms
+         avg:                                  0.99ms
+         max:                                 28.41ms
+         approx.  95 percentile:               6.74ms
 
 Threads fairness:
-    events (avg/stddev):           627.1250/60.25
-    execution time (avg/stddev):   0.6128/0.06
+    events (avg/stddev):           625.0000/61.96
+    execution time (avg/stddev):   0.6201/0.04
 
 sysbench 0.4.12:  multi-threaded system evaluation benchmark
 
@@ -150,23 +153,23 @@ Doing random r/w test
 Threads started!
 Done.
 
-Operations performed:  6089 Read, 4055 Write, 12800 Other = 22944 Total
-Read 95.141Mb  Written 63.359Mb  Total transferred 158.5Mb  (21.527Mb/sec)
- 1377.71 Requests/sec executed
+Operations performed:  6106 Read, 4064 Write, 12800 Other = 22970 Total
+Read 95.406Mb  Written 63.5Mb  Total transferred 158.91Mb  (21.281Mb/sec)
+ 1361.97 Requests/sec executed
 
 Test execution summary:
-    total time:                          7.3629s
-    total number of events:              10144
-    total time taken by event execution: 12.5689
+    total time:                          7.4671s
+    total number of events:              10170
+    total time taken by event execution: 12.3063
     per-request statistics:
          min:                                  0.01ms
-         avg:                                  1.24ms
-         max:                                 47.81ms
-         approx.  95 percentile:               8.51ms
+         avg:                                  1.21ms
+         max:                                 32.08ms
+         approx.  95 percentile:               8.65ms
 
 Threads fairness:
-    events (avg/stddev):           634.0000/63.16
-    execution time (avg/stddev):   0.7856/0.07
+    events (avg/stddev):           635.6250/64.07
+    execution time (avg/stddev):   0.7691/0.06
 
 sysbench 0.4.12:  multi-threaded system evaluation benchmark
 
@@ -186,23 +189,23 @@ Doing random r/w test
 Threads started!
 Done.
 
-Operations performed:  6007 Read, 4000 Write, 12800 Other = 22807 Total
-Read 93.859Mb  Written 62.5Mb  Total transferred 156.36Mb  (21.414Mb/sec)
- 1370.47 Requests/sec executed
+Operations performed:  6119 Read, 4071 Write, 12800 Other = 22990 Total
+Read 95.609Mb  Written 63.609Mb  Total transferred 159.22Mb  (22.069Mb/sec)
+ 1412.42 Requests/sec executed
 
 Test execution summary:
-    total time:                          7.3019s
-    total number of events:              10007
-    total time taken by event execution: 12.4411
+    total time:                          7.2145s
+    total number of events:              10190
+    total time taken by event execution: 12.1168
     per-request statistics:
          min:                                  0.01ms
-         avg:                                  1.24ms
-         max:                                 48.27ms
-         approx.  95 percentile:               8.66ms
+         avg:                                  1.19ms
+         max:                                 37.82ms
+         approx.  95 percentile:               8.35ms
 
 Threads fairness:
-    events (avg/stddev):           625.4375/67.20
-    execution time (avg/stddev):   0.7776/0.05
+    events (avg/stddev):           636.8750/75.64
+    execution time (avg/stddev):   0.7573/0.05
 
 -----4G 128Files 16Threads
 sysbench 0.4.12:  multi-threaded system evaluation benchmark
@@ -223,23 +226,59 @@ Doing random r/w test
 Threads started!
 Done.
 
-Operations performed:  6025 Read, 4007 Write, 12800 Other = 22832 Total
-Read 94.141Mb  Written 62.609Mb  Total transferred 156.75Mb  (18.893Mb/sec)
- 1209.15 Requests/sec executed
+Operations performed:  6080 Read, 4044 Write, 12800 Other = 22924 Total
+Read 95Mb  Written 63.188Mb  Total transferred 158.19Mb  (19.591Mb/sec)
+ 1253.80 Requests/sec executed
 
 Test execution summary:
-    total time:                          8.2968s
-    total number of events:              10032
-    total time taken by event execution: 28.0452
+    total time:                          8.0747s
+    total number of events:              10124
+    total time taken by event execution: 27.1652
+    per-request statistics:
+         min:                                  0.01ms
+         avg:                                  2.68ms
+         max:                                 42.41ms
+         approx.  95 percentile:              11.81ms
+
+Threads fairness:
+    events (avg/stddev):           632.7500/30.61
+    execution time (avg/stddev):   1.6978/0.05
+
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 16
+
+Extra file open flags: 0
+128 files, 32Mb each
+4Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 10000
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Done.
+
+Operations performed:  6024 Read, 4006 Write, 12800 Other = 22830 Total
+Read 94.125Mb  Written 62.594Mb  Total transferred 156.72Mb  (18.365Mb/sec)
+ 1175.33 Requests/sec executed
+
+Test execution summary:
+    total time:                          8.5338s
+    total number of events:              10030
+    total time taken by event execution: 28.0483
     per-request statistics:
          min:                                  0.01ms
          avg:                                  2.80ms
-         max:                                 32.72ms
-         approx.  95 percentile:              12.04ms
+         max:                                 39.14ms
+         approx.  95 percentile:              12.42ms
 
 Threads fairness:
-    events (avg/stddev):           627.0000/27.08
-    execution time (avg/stddev):   1.7528/0.06
+    events (avg/stddev):           626.8750/28.32
+    execution time (avg/stddev):   1.7530/0.07
 
 sysbench 0.4.12:  multi-threaded system evaluation benchmark
 
@@ -259,23 +298,23 @@ Doing random r/w test
 Threads started!
 Done.
 
-Operations performed:  6051 Read, 4024 Write, 12800 Other = 22875 Total
-Read 94.547Mb  Written 62.875Mb  Total transferred 157.42Mb  (18.97Mb/sec)
- 1214.11 Requests/sec executed
+Operations performed:  6019 Read, 4003 Write, 12800 Other = 22822 Total
+Read 94.047Mb  Written 62.547Mb  Total transferred 156.59Mb  (17.272Mb/sec)
+ 1105.42 Requests/sec executed
 
 Test execution summary:
-    total time:                          8.2983s
-    total number of events:              10075
-    total time taken by event execution: 27.6871
+    total time:                          9.0662s
+    total number of events:              10022
+    total time taken by event execution: 31.8298
     per-request statistics:
          min:                                  0.01ms
-         avg:                                  2.75ms
-         max:                                 33.57ms
-         approx.  95 percentile:              11.83ms
+         avg:                                  3.18ms
+         max:                                 51.55ms
+         approx.  95 percentile:              13.77ms
 
 Threads fairness:
-    events (avg/stddev):           629.6875/37.44
-    execution time (avg/stddev):   1.7304/0.06
+    events (avg/stddev):           626.3750/37.82
+    execution time (avg/stddev):   1.9894/0.12
 
 sysbench 0.4.12:  multi-threaded system evaluation benchmark
 
@@ -295,23 +334,23 @@ Doing random r/w test
 Threads started!
 Done.
 
-Operations performed:  6018 Read, 4002 Write, 12800 Other = 22820 Total
-Read 94.031Mb  Written 62.531Mb  Total transferred 156.56Mb  (19.154Mb/sec)
- 1225.89 Requests/sec executed
+Operations performed:  6007 Read, 3996 Write, 12800 Other = 22803 Total
+Read 93.859Mb  Written 62.438Mb  Total transferred 156.3Mb  (16.766Mb/sec)
+ 1073.04 Requests/sec executed
 
 Test execution summary:
-    total time:                          8.1737s
-    total number of events:              10020
-    total time taken by event execution: 27.7216
+    total time:                          9.3221s
+    total number of events:              10003
+    total time taken by event execution: 31.8566
     per-request statistics:
          min:                                  0.01ms
-         avg:                                  2.77ms
-         max:                                 34.33ms
-         approx.  95 percentile:              12.03ms
+         avg:                                  3.18ms
+         max:                                 44.15ms
+         approx.  95 percentile:              13.10ms
 
 Threads fairness:
-    events (avg/stddev):           626.2500/38.42
-    execution time (avg/stddev):   1.7326/0.07
+    events (avg/stddev):           625.1875/42.24
+    execution time (avg/stddev):   1.9910/0.09
 
 sysbench 0.4.12:  multi-threaded system evaluation benchmark
 
@@ -331,57 +370,21 @@ Doing random r/w test
 Threads started!
 Done.
 
-Operations performed:  6038 Read, 4015 Write, 12800 Other = 22853 Total
-Read 94.344Mb  Written 62.734Mb  Total transferred 157.08Mb  (17.829Mb/sec)
- 1141.04 Requests/sec executed
+Operations performed:  6006 Read, 3994 Write, 12800 Other = 22800 Total
+Read 93.844Mb  Written 62.406Mb  Total transferred 156.25Mb  (16.947Mb/sec)
+ 1084.63 Requests/sec executed
 
 Test execution summary:
-    total time:                          8.8104s
-    total number of events:              10053
-    total time taken by event execution: 30.7342
+    total time:                          9.2198s
+    total number of events:              10000
+    total time taken by event execution: 32.6931
     per-request statistics:
          min:                                  0.01ms
-         avg:                                  3.06ms
-         max:                                 42.68ms
-         approx.  95 percentile:              12.71ms
+         avg:                                  3.27ms
+         max:                                 37.74ms
+         approx.  95 percentile:              12.89ms
 
 Threads fairness:
-    events (avg/stddev):           628.3125/40.42
-    execution time (avg/stddev):   1.9209/0.07
-
-sysbench 0.4.12:  multi-threaded system evaluation benchmark
-
-Running the test with following options:
-Number of threads: 16
-
-Extra file open flags: 0
-128 files, 32Mb each
-4Gb total file size
-Block size 16Kb
-Number of random requests for random IO: 10000
-Read/Write ratio for combined random IO test: 1.50
-Periodic FSYNC enabled, calling fsync() each 100 requests.
-Calling fsync() at the end of test, Enabled.
-Using synchronous I/O mode
-Doing random r/w test
-Threads started!
-Done.
-
-Operations performed:  6010 Read, 3997 Write, 12800 Other = 22807 Total
-Read 93.906Mb  Written 62.453Mb  Total transferred 156.36Mb  (18.163Mb/sec)
- 1162.44 Requests/sec executed
-
-Test execution summary:
-    total time:                          8.6086s
-    total number of events:              10007
-    total time taken by event execution: 28.9789
-    per-request statistics:
-         min:                                  0.01ms
-         avg:                                  2.90ms
-         max:                                 61.50ms
-         approx.  95 percentile:              12.62ms
-
-Threads fairness:
-    events (avg/stddev):           625.4375/38.59
-    execution time (avg/stddev):   1.8112/0.05
+    events (avg/stddev):           625.0000/28.12
+    execution time (avg/stddev):   2.0433/0.05
 
